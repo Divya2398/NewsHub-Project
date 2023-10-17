@@ -40,6 +40,7 @@ const Signup = () => {
       setLoading(false);
     } else {
       // dispatching user signup action
+
       await dispatch(registerUser({ name, mobile, email, password }))
         .unwrap()
         .then((PromiseResult) => {

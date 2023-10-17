@@ -15,7 +15,7 @@ class UserService {
     );
   };
 
-  // User Login Api
+  // User Login api
   UserLogin = (email, password) => {
     return client.post(
       `${BASE_URL}R1/user/login`,

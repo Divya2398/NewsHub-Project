@@ -17,7 +17,7 @@ const {
 //         callback(null, `${file.fieldname}_${Date.now()}${path.extname(file.originalname)}`);
 //     }
 // })
-
+// routes
 router.route("/").post(register);
 router.route("/login").post(login);
 router.route("/logout/:id").put(logout);

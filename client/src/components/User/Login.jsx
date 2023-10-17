@@ -21,6 +21,7 @@ const Login = () => {
   };
 
   // submit form
+
   const submitHandler = async () => {
     setLoading(true);
     // checking if required fields are provided

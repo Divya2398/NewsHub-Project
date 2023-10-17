@@ -2,7 +2,7 @@ import axios from "axios";
 
 export function createAxiosClient({ options, getCurrentAccessToken, logout }) {
   const client = axios.create(options);
-
+  // automatic token insertion
   client.interceptors.request.use(
     (config) => {
       if (config.authorization !== false) {
