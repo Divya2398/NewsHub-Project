@@ -8,7 +8,9 @@ import {
 import "./Selectioncards.scss";
 
 const SelectionCard = ({ data }) => {
+  // use dispatch
   const dispatch = useDispatch();
+
   const favState = useSelector((state) => state.fav);
   const [selectlist, setSelectlist] = useState([]);
   const handleselect = (selectedData) => {

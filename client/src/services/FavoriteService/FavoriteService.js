@@ -2,7 +2,7 @@ import { client } from "../Token/TokenService";
 import { BASE_URL } from "../baseUrl";
 import axios from "axios";
 class FavoriteService {
-  // Get User Interest / Favorite keywords
+  // Get User Interest / Favorite keyword
   GetUserInterest = () => {
     return client.get(`${BASE_URL}R1/user/getFavorite`);
   };
