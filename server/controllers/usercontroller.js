@@ -128,7 +128,7 @@ async function logout(req, res) {
   }
 }
 
-// Add User Favorite
+// Add User Favorites
 async function addFavorite(req, res) {
   try {
     console.log(req.user);
@@ -149,7 +149,7 @@ async function addFavorite(req, res) {
   }
 }
 
-// Get User Favorite keywords
+// Get User Favorites keyword
 async function getFavorite(req, res) {
   try {
     const user = await userSchema.findOne({ uuid: req.user.uuid });

@@ -7,6 +7,7 @@ import FavoritePage from "./pages/FavoritePage";
 function App() {
   return (
     <Router>
+      {/* protect privte routes */}
       <Routes>
         <Route exact path="/" element={<AuthenticationPage />} />
         <Route

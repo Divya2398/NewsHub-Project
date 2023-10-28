@@ -6,6 +6,7 @@ export const ProtectRoute = ({ children }) => {
   if (!authUser) {
     // not logged in so redirect to login
     return <Navigate to="/" />;
+    
     // with return url
     // state={{ from: history.location }}
   }
